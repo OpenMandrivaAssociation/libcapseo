@@ -14,7 +14,7 @@
 Summary:        A realtime encoder/decoder library
 Name:           libcapseo
 Version:        %{capseo_version}
-Release:        %mkrel 0.%{snapshot}.1
+Release:        %mkrel 0.%{snapshot}.2
 License:        GPLv3
 Group:          System/Libraries 
 URL:            http://gitorious.org/projects/capseo/
@@ -46,7 +46,7 @@ via captury, the OpenGL video capturing tool.
 
 %package devel
 Summary: Files needed for development using %{name}
-Group: Development/Libraries
+Group:    Development/Other 
 Requires: %{name} = %{version}-%{release}
 Requires: libtheora-devel
 Requires: libogg-devel
@@ -68,7 +68,7 @@ developing applications that use %{name}.
 
 %package tools
 Summary: Encoding/Decoding tools for capseo
-Group: Applications/Multimedia
+Group:   Sound
 Requires: %{name} = %{version}-%{release}
 
 %description tools
