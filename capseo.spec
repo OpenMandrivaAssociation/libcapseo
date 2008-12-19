@@ -14,7 +14,7 @@
 Summary:        A realtime encoder/decoder library
 Name:           libcapseo
 Version:        %{capseo_version}
-Release:        %mkrel 0.%{snapshot}.2
+Release:        %mkrel 0.%{snapshot}.3
 License:        GPLv3
 Group:          System/Libraries 
 URL:            http://gitorious.org/projects/capseo/
@@ -51,7 +51,7 @@ Requires: %{name} = %{version}-%{release}
 Requires: libtheora-devel
 Requires: libogg-devel
 Requires: X11-devel
-Requires: mesa-libGL-devel
+Requires: mesagl-devel
 Requires: pkgconfig
 
 %description devel
