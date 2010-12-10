@@ -14,7 +14,7 @@
 Summary:        A realtime encoder/decoder library
 Name:           libcapseo
 Version:        %{capseo_version}
-Release:        %mkrel 0.%{snapshot}.4
+Release:        %mkrel 0.%{snapshot}.5
 License:        GPLv3
 Group:          System/Libraries 
 URL:            http://gitorious.org/projects/capseo/
