@@ -21,7 +21,7 @@ URL:            http://gitorious.org/projects/capseo/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  mesagl-devel
 BuildRequires:	libtheora-devel
-
+BuildRequires:	libogg-devel
 # Specific snapshot no upstream release (yet)
 Source0:        %{tarfile}
 
