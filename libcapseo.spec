@@ -14,17 +14,13 @@
 Summary:        A realtime encoder/decoder library
 Name:           libcapseo
 Version:        %{capseo_version}
-Release:        %mkrel 0.%{snapshot}.5
+Release:        %mkrel 0.%{snapshot}.6
 License:        GPLv3
 Group:          System/Libraries 
 URL:            http://gitorious.org/projects/capseo/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires:  libtool automake autoconf 
-BuildRequires:  pkgconfig
-BuildRequires:  libtheora-devel
-BuildRequires:  libogg-devel
-BuildRequires:  X11-devel
 BuildRequires:  mesagl-devel
+BuildRequires:	libtheora-devel
 
 # Specific snapshot no upstream release (yet)
 Source0:        %{tarfile}
@@ -48,11 +44,6 @@ via captury, the OpenGL video capturing tool.
 Summary: Files needed for development using %{name}
 Group:    Development/Other 
 Requires: %{name} = %{version}-%{release}
-Requires: libtheora-devel
-Requires: libogg-devel
-Requires: X11-devel
-Requires: mesagl-devel
-Requires: pkgconfig
 
 %description devel
 This package contains libraries and header files for
@@ -82,15 +73,15 @@ Utilities for capseo
 
 %prep
 %setup -q -n %{name}-%{version}
-./autogen.sh
 
 %build
-%configure --disable-static --enable-theora --disable-examples
-make %{?_smp_mflags}
+autoreconf -fi
+%configure2_5x --disable-static --enable-theora --disable-examples
+%make
 
 %install
 rm -rf %{buildroot}
-make install DESTDIR=%{buildroot}
+%makeinstall_std
 
 rm -rf %{buildroot}/%{_libdir}/*.la
 
