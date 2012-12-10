@@ -87,3 +87,29 @@ rm -rf %{buildroot}/%{_libdir}/*.la
 
 %clean
 rm -rf %{buildroot}
+
+
+%changelog
+* Sat Feb 05 2011 Funda Wang <fwang@mandriva.org> 0.3.0-0.20081031.6mdv2011.0
++ Revision: 636024
+- BR ogg
+- tighten BR
+
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.3.0-0.20081031.5mdv2011.0
++ Revision: 620084
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.3.0-0.20081031.4mdv2010.0
++ Revision: 438523
+- rebuild
+
+* Fri Dec 19 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.3.0-0.20081031.3mdv2009.1
++ Revision: 316043
+- Fix  Requires
+
+* Thu Dec 18 2008 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.3.0-0.20081031.2mdv2009.1
++ Revision: 315994
+- Fix groups
+- import libcapseo
+
+
