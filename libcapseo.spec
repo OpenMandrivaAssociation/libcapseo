@@ -16,7 +16,7 @@ Version:	0.3.0
 Release:	0.%{gitdate}.7
 License:	GPLv3+
 Group:		System/Libraries
-Url:		http://gitorious.org/projects/capseo/
+Url:		https://gitorious.org/projects/capseo/
 # Specific snapshot no upstream release (yet)
 Source0:	%{name}-%{version}-%{gitdate}.tar.bz2
 BuildRequires:	pkgconfig(gl)
