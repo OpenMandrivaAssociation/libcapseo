@@ -19,6 +19,11 @@ Group:		System/Libraries
 Url:		https://gitorious.org/projects/capseo/
 # Specific snapshot no upstream release (yet)
 Source0:	%{name}-%{version}-%{gitdate}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(ogg)
 BuildRequires:	pkgconfig(theora)
